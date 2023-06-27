@@ -18,6 +18,4 @@ def index(request):
     response = HttpResponse(file, content_type='video/mp4')
     response['Content-Disposition'] = 'attachment; filename=my_video.mp4'
 
-    os.remove(OUTPUT_NAME)
-
     return response
