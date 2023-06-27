@@ -4,7 +4,7 @@ from PIL import Image,ImageDraw,ImageFont
 
 
 def create_scrolling_text_video(text, output_name):
-    font = ImageFont.truetype('arial.ttf', 32)
+    font = ImageFont.truetype('/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf', 32)
     image_width=100 # Width must be 100 according to the technical requirements
     image_height=100 # Height must be 100 according to the technical requirements
     text_color=(255, 255, 255) # Scrolling text color is white as in the example video
